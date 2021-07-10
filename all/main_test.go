@@ -1,10 +1,9 @@
 package main
 
 import (
-	"leetcode-go/all/one"
 	"testing"
 )
 
-func Test(t *testing.T)  {
-	t.Log(one.TwoSum([]int{3,2,4},6))
+func Test(t *testing.T) {
+	//two.AddTwoNums([]int{1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1}, []int{5, 6, 4})
 }
