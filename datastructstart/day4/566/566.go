@@ -1,4 +1,4 @@
-package day4
+package _66
 
 func matrixReshape(mat [][]int, r int, c int) [][]int {
 	// 判断原矩阵的大小
