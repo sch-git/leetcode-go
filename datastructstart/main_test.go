@@ -1,7 +1,7 @@
 package datastructstart
 
 import (
-	"leetcode-go/datastructstart/twoday/eightyeight"
+	"leetcode-go/datastructstart/day2/eightyeight"
 	"testing"
 )
 
