@@ -1,6 +1,8 @@
 package _78
 
-func isBadVersion(version int) bool
+func isBadVersion(version int) bool {
+	return true
+}
 
 func firstBadVersion(n int) int {
 	left := 0
