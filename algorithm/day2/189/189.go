@@ -1,6 +1,6 @@
 package _89
 
-// simple
+// middle
 
 func Rotate(nums []int, k int) {
 	if k == 0 || k == len(nums) {
