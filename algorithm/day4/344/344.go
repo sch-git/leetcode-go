@@ -1,5 +1,7 @@
 package _44
 
+// simple
+
 func reverseString(s []byte) {
 	left := 0
 	right := len(s) - 1
