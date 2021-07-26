@@ -1,10 +1,10 @@
 package algorithm
 
 import (
-	_89 "leetcode-go/algorithm/day2/189"
+	_3 "leetcode-go/algorithm/day6/3"
 	"testing"
 )
 
 func TestName(t *testing.T) {
-	_89.Rotate([]int{-1,-100,3,99}, 2)
+	_3.LengthOfLongestSubstring("abcabcbb")
 }
