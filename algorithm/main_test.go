@@ -1,10 +1,11 @@
 package algorithm
 
 import (
-	_3 "leetcode-go/algorithm/day6/3"
+	_67 "leetcode-go/algorithm/day6/567"
 	"testing"
 )
 
 func TestName(t *testing.T) {
-	_3.LengthOfLongestSubstring("abcabcbb")
+
+	_67.CheckInclusion("ab","eidboaoo")
 }
