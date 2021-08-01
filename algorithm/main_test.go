@@ -1,18 +1,11 @@
 package algorithm
 
 import (
-	_33 "leetcode-go/algorithm/day7/733"
+	_4 "leetcode-go/algorithm/day1/34"
 	"testing"
 )
 
 func TestName(t *testing.T) {
 
-	_33.FloodFill([][]int{
-		{
-			0, 0, 0,
-		},
-		{
-			0, 1, 1,
-		},
-	}, 1, 1, 1)
+	_4.SearchRange([]int{5,7,7,8,8,10},6)
 }
