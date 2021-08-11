@@ -1,5 +1,7 @@
 package zero_09
 
+// simple
+
 type CQueue struct {
 	stackHead []int
 	stackTail []int
