@@ -5,6 +5,7 @@ import "strconv"
 // middle
 // 动态规划
 // dp[n] = dp[n]-1 + dp[n-2](if dp[n-2:] <= 26)
+
 func translateNum(num int) int {
 	s := strconv.Itoa(num)
 	if len(s) == 1 {
