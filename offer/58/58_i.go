@@ -2,6 +2,8 @@ package _58
 
 import "strings"
 
+//simple
+
 func reverseWords(s string) string {
 	if len(s) < 1 {
 		return s
