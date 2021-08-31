@@ -3,7 +3,8 @@ package _33
 import "math"
 
 // middle
-// 二叉树
+// 二叉树/单调栈
+// 后续遍历倒序
 
 func verifyPostorder(postorder []int) bool {
 	stack := make([]int, 0)
