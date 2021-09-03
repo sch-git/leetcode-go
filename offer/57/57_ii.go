@@ -16,7 +16,7 @@ func findContinuousSequence(target int) [][]int {
 			l++
 		} else if sum < target {
 			r++
-		}else {
+		} else {
 			l++
 		}
 	}
