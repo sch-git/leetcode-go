@@ -1,5 +1,7 @@
 package _14
 
+// middle
+
 func cuttingRope(n int) int {
 	if n < 4 {
 		return n - 1
