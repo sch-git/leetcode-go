@@ -2,7 +2,6 @@ package _38
 
 var (
 	res    []string
-	filter map[string]bool
 )
 
 func permutation(s string) []string {
@@ -12,7 +11,6 @@ func permutation(s string) []string {
 
 	visit := make(map[int]bool, 0)
 	res = make([]string, 0)
-	filter = make(map[string]bool)
 
 	back(make([]rune, 0), visit, s)
 	return res
@@ -20,19 +18,21 @@ func permutation(s string) []string {
 
 func back(selected []rune, visited map[int]bool, s string) {
 	if len(selected) == len(s) {
-		if filter[string(selected)] {
-			return
-		}
 		res = append(res, string(selected))
-		filter[string(selected)] = true
 		return
 	}
 
+	firstSelected := make(map[rune]int, 0)
 	for idx, ch := range s {
 		if visited[idx] {
 			continue
 		}
 
+		if firstSelected[ch] != 0 && firstSelected[ch] == len(selected)+1 {
+			continue
+		}
+
+		firstSelected[ch] = len(selected) + 1
 		visited[idx] = true
 		selected = append(selected, ch)
 		back(selected, visited, s)
