@@ -1,5 +1,9 @@
 package _095
 
+// middle
+// 动态规划
+// 最长公共子序列
+
 func longestCommonSubsequence(text1 string, text2 string) int {
 	dp := make([][]int, len(text1)+1)
 	dp[0] = make([]int, len(text2)+1)
