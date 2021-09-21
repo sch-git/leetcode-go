@@ -1,5 +1,8 @@
 package _014
 
+// middle
+// 滑动窗口
+
 func checkInclusion(s1 string, s2 string) bool {
 	if len(s1) > len(s2) {
 		return false
