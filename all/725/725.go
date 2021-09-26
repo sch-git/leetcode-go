@@ -43,7 +43,6 @@ func splitListToParts(head *ListNode, k int) []*ListNode {
 			temp = temp.Next
 		}
 	}
-
 	for len(res) < k {
 		res = append(res, nil)
 	}
