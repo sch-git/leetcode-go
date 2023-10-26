@@ -1,11 +1,5 @@
 package sim
 
-type TreeNode struct {
-	Val   int64     `json:"val"`
-	Left  *TreeNode `json:"left"`
-	Right *TreeNode `json:"right"`
-}
-
 func isSameTree(p *TreeNode, q *TreeNode) bool {
 	if p == nil && q == nil {
 		return true
