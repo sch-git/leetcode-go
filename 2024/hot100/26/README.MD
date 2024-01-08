@@ -6,4 +6,4 @@
 > 设 fast、slow，fast 每次走两步，slow 每次走一步<br>
 > 如果存在环，当指针相遇时，fast 走了 2s，slow 走了s<br>
 > 设链表到环入口为 a，环长度为b，则 s=a+nb<br>
-> 将 fast 移动到 head，再次相遇即为环入口，走了 a步
+> **将 fast 移动到 head，再次相遇即为环入口**，走了 a步
