@@ -1,32 +1,23 @@
 package main
 
 import (
+	"encoding/json"
 	"fmt"
 )
 
 func main() {
-	list := &ListNode{
-		Val: 1,
-		Next: &ListNode{
-			Val: 2,
-			Next: &ListNode{
-				Val:  2,
-				Next: &ListNode{Val: 1},
-			},
-		},
+	str := `{"is_readcamp":true}`
+	var obj OrderContext
+	err := json.Unmarshal([]byte(str), &obj)
+	if err != nil {
+		fmt.Println("err", err)
 	}
-	fmt.Println(check(list))
-	list = &ListNode{
-		Val: 1,
-		Next: &ListNode{
-			Val: 2,
-			Next: &ListNode{
-				Val:  3,
-				Next: &ListNode{Val: 23, Next: &ListNode{Val: 1}},
-			},
-		},
-	}
-	fmt.Println(check(list))
+	fmt.Printf("%v", *obj.IsReadcamp)
+
+}
+
+type OrderContext struct {
+	IsReadcamp *bool `json:"is_readcamp"`
 }
 
 type ListNode struct {
